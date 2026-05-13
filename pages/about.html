@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <<title>About — WandForge Studios</title>
+  <meta name="description" content="Meet the two co-founders behind WandForge — a technical lead and a creative director building indie games from Istanbul." />
+  <link rel="icon" href="../images/logo.jpeg" type="image/jpeg" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .about-page { padding: 9rem 2rem 5rem; max-width: 1100px; margin: 0 auto; }
+
+    /* FOUNDER CARDS */
+    .founder-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 3rem 0 5rem; }
+    .founder-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(240,165,0,0.2);
+      border-radius: 24px;
+      padding: 2.5rem 2rem;
+    }
+    .founder-card .avatar {
+      width: 80px; height: 80px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--mid-purple), var(--purple));
+      border: 3px solid rgba(240,165,0,0.35);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; margin-bottom: 1.25rem;
+    }
+    .founder-card .founder-name {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 1.05rem; color: var(--white); margin-bottom: 0.25rem;
+    }
+    .founder-card .founder-role {
+      color: var(--gold); font-size: 0.78rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.25rem;
+    }
+    .founder-card .bio {
+      color: var(--text-muted); font-size: 0.9rem; line-height: 1.85; margin-bottom: 1.25rem;
+    }
+    .founder-card .exp-item {
+      display: flex; align-items: flex-start; gap: 0.6rem;
+      margin-bottom: 0.6rem; font-size: 0.85rem; color: var(--text-light);
+    }
+    .founder-card .exp-item::before { content: '✦'; color: var(--gold); flex-shrink: 0; margin-top: 2px; font-size: 0.7rem; }
+    .chips-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.25rem; }
+
+    /* STORY */
+    .story-section { max-width: 760px; margin: 0 auto 5rem; }
+    .story-section p { color: var(--text-muted); line-height: 1.95; margin-bottom: 1.25rem; font-size: 1rem; }
+    .story-section .hl { color: var(--gold-light); font-weight: 700; }
+
+    /* VALUES */
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; }
+    .value-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(156,92,245,0.2);
+      border-radius: 18px; padding: 1.75rem 1.25rem; text-align: center;
+    }
+    .value-card .vi { font-size: 2rem; margin-bottom: 0.75rem; }
+    .value-card h4 { font-family: 'Cinzel Decorative', serif; font-size: 0.82rem; color: var(--gold-light); margin-bottom: 0.5rem; }
+    .value-card p { color: var(--text-muted); font-size: 0.85rem; line-height: 1.7; }
+
+    @media (max-width: 700px) {
+      .founder-grid { grid-template-columns: 1fr; }
+      .values-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <img src="../images/logo.jpeg" alt="WandForge Logo" />
+      <span>WandForge</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div class="about-page">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="section-header fade-up">
+      <span class="section-label">✦ About Us</span>
+      <h2>Where Technology Meets Creativity</h2>
+        <p>
+        WandForge is a game & software startup founded by a software engineer and a game designer with a shared vision: building meaningful digital experiences through technology, creativity, and interactive storytelling.
+        </p>
+    </div>
+
+    <!-- STORY -->
+    <div class="story-section fade-up">
+    <p>
+        <span class="hl">WandForge</span> was created with a simple belief: digital experiences should feel both technically polished and emotionally memorable.
+    </p>
+
+    <p>
+        By combining engineering, game design, and creative direction, we aim to build products that blend cozy fantasy aesthetics with scalable technology and thoughtful interaction design.
+    </p>
+
+    <p>
+        Our current focus is developing our debut cozy fantasy puzzle experience for mobile platforms while laying the foundation for a broader creative technology startup in the future.
+    </p>
+
+    <p>
+        We see WandForge not only as a game studio, but as a long-term creative venture where software, storytelling, and interactive design evolve together.
+    </p>
+    </div>
+
+    <!-- FOUNDERS -->
+    <div class="section-header fade-up">
+      <span class="section-label">✦ The Founders</span>
+      <h2>Meet the Team</h2>
+    </div>
+
+    <div class="founder-grid">
+
+      <!-- GÜLDEN -->
+      <div class="founder-card fade-up">
+        <div class="avatar">⚙️</div>
+        <div class="founder-name">Gülden Aydoğan</div>
+        <div class="founder-role">Co-Founder & Technical Lead</div>
+        <p class="bio">
+        Computer Engineering graduate from Sabancı University with experience across AI research, software engineering, and product development. Focused on building scalable systems and technology-driven interactive products.
+        </p>
+        <div class="exp-item">AI research & computer vision projects</div>
+        <div class="exp-item">Full-stack & AI development experience with FastAPI and Azure OpenAI</div>
+        <div class="exp-item">Agile product leadership and software engineering across startup-oriented teams</div>
+        <div class="chips-row">
+          <span class="chip">Python</span>
+          <span class="chip">React</span>
+          <span class="chip">FastAPI</span>
+          <span class="chip">AWS</span>
+          <span class="chip">Unity</span>
+          <span class="chip">Scrum Master</span>
+          <span class="chip">Product Management</span>
+        </div>
+      </div>
+
+      <!-- SILA -->
+      <div class="founder-card fade-up" style="transition-delay: 0.12s">
+        <div class="avatar">🎨</div>
+        <div class="founder-name">Sıla Öziskender</div>
+        <div class="founder-role">Co-Founder & Creative Director</div>
+        <p class="bio">
+        Digital Game Design graduate specializing in player experience, UX design, narrative systems, and community-driven game development with hands-on industry and product experience.
+        </p>
+        <div class="exp-item">Game design, UX optimization, and player-focused product development</div>
+        <div class="exp-item">Community leadership and international gaming event organization</div>
+        <div class="exp-item">Experience in QA testing, balancing systems, and creative production workflows</div>
+        <div class="chips-row">
+          <span class="chip">Game Design</span>
+          <span class="chip">Figma</span>
+          <span class="chip">Adobe Suite</span>
+          <span class="chip">Unity</span>
+          <span class="chip">UX</span>
+          <span class="chip">A/B Testing</span>
+          <span class="chip">Data Analysis</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- VALUES -->
+    <div class="section-header fade-up">
+      <span class="section-label">✦ What We Stand For</span>
+      <h2>Our Values</h2>
+    </div>
+
+    <div class="values-grid fade-up">
+      <div class="value-card">
+        <div class="vi">🌟</div>
+        <h4>Creative Technology</h4>
+            <p>
+            We combine engineering and creativity to build experiences that feel immersive, polished, and emotionally engaging.
+            </p>
+      </div>
+      <div class="value-card">
+        <div class="vi">👩‍💻</div>
+        <h4>Player-Centered Design</h4>
+        <p>
+        Every system, mechanic, and interaction is designed around accessibility, comfort, and long-term player connection.
+        </p>
+      </div>
+      <div class="value-card">
+        <div class="vi">🧪</div>
+        <h4>Long-Term Vision</h4>
+        <p>
+        We're building more than a single game — we're creating the foundation for a sustainable creative technology startup.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+<footer>
+  <span class="footer-logo">WandForge</span>
+
+  <p>
+    © 2026 WandForge Studios · Game & Software Startup · Istanbul
+  </p>
+
+  <div class="footer-links">
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+
+    <a href="https://www.instagram.com/wandforgestudios"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display:flex; align-items:center; gap:0.4rem;">
+
+      <svg xmlns="http://www.w3.org/2000/svg"
+           width="16"
+           height="16"
+           viewBox="0 0 24 24"
+           fill="currentColor">
+        <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm9.5 1.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+      </svg>
+    </a>
+  </div>
+</footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
