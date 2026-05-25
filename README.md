@@ -1,8 +1,8 @@
 # 🪄 WandForge Website
 
-Official website source code for WandForge — a game & software startup building cozy fantasy experiences.
+Official website source code for WandForge — a game startup cozy fantasy experiences.
 
-> “Code the Magic, Play the Spell.”
+> “Forge the Magic, Play the Spell.”
 
 ---
 
