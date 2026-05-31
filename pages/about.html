@@ -7,52 +7,6 @@
   <meta name="description" content="Meet the two co-founders behind WandForge — a technical lead and a creative director building indie games from Istanbul." />
   <link rel="icon" href="../images/logo.png" type="image/png" />
   <link rel="stylesheet" href="../css/style.css" />
-  <style>
-    .about-page { padding: 9rem 2rem 5rem; max-width: 1100px; margin: 0 auto; }
-
-    /* FOUNDER CARDS */
-    .founder-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 3rem 0 5rem; }
-    .founder-card {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(240,165,0,0.2);
-      border-radius: 24px;
-      padding: 2.5rem 2rem;
-    }
-    .founder-card .avatar {
-      width: 100px; height: 100px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--mid-purple), var(--purple));
-      border: 3px solid rgba(240,165,0,0.35);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 2rem; margin-bottom: 1.25rem;
-    }
-    .founder-card .founder-name {
-      font-family: 'Cinzel Decorative', serif;
-      font-size: 1.05rem; color: var(--white); margin-bottom: 0.25rem;
-    }
-    .founder-card .founder-role {
-      color: var(--gold); font-size: 0.78rem; font-weight: 700;
-      letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.25rem;
-    }
-    .founder-card .bio {
-      color: var(--text-muted); font-size: 0.9rem; line-height: 1.85; margin-bottom: 1.25rem;
-    }
-    .founder-card .exp-item {
-      display: flex; align-items: flex-start; gap: 0.6rem;
-      margin-bottom: 0.6rem; font-size: 0.85rem; color: var(--text-light);
-    }
-    .founder-card .exp-item::before { content: '✦'; color: var(--gold); flex-shrink: 0; margin-top: 2px; font-size: 0.7rem; }
-    .chips-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.25rem; }
-
-    /* STORY */
-    .story-section { max-width: 760px; margin: 0 auto 5rem;}
-    .story-section p { color: var(--text-muted); line-height: 1.95; margin-bottom: 1.25rem; font-size: 1rem; }
-    .story-section .hl { color: var(--gold-light); font-weight: 700; }
-
-    @media (max-width: 700px) {
-      .founder-grid { grid-template-columns: 1fr; }
-    }
-    
-  </style>
 </head>
 <body>
 
@@ -61,12 +15,14 @@
       <img src="../images/logo.png" alt="WandForge Logo" />
       <span>WandForge</span>
     </a>
+    <div class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
     <ul class="nav-links">
       <li><a href="../index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html" class="nav-cta">Contact</a></li>
     </ul>
-    <div class="hamburger"><span></span><span></span><span></span></div>
   </nav>
 
   <div class="about-page">
@@ -104,7 +60,7 @@
       <!-- GÜLDEN -->
       <div class="founder-card fade-up">
         <div class="avatar">
-          <img src="../images/gulden.jpg" alt="Gülden Aydoğan" style="width:100%; height:100%; object-fit:cover; border-radius:50%;" />
+          <img src="../images/gulden.jpg" alt="Gülden Aydoğan" />
         </div>
         <div class="founder-name">Gülden Aydoğan</div>
         <div class="founder-role">Co-Founder & Technical Lead</div>
@@ -114,9 +70,9 @@
       </div>
 
       <!-- SILA -->
-      <div class="founder-card fade-up" style="transition-delay: 0.12s">
+      <div class="founder-card fade-up fade-up-delay">
         <div class="avatar">
-          <img src="../images/sila.jpeg" alt="Sıla Öziskender" style="width:100%; height:100%; object-fit:cover; border-radius:50%;" />
+          <img src="../images/sila.jpeg" alt="Sıla Öziskender" />
         </div>
         <div class="founder-name">Sıla Öziskender</div>
         <div class="founder-role">Co-Founder & Creative Director</div>
@@ -142,7 +98,8 @@
     <a href="https://www.instagram.com/wandforgestudios"
        target="_blank"
        rel="noopener noreferrer"
-       style="display:flex; align-items:center; gap:0.4rem;">
+       class="footer-social"
+       aria-label="Instagram">
 
       <svg xmlns="http://www.w3.org/2000/svg"
            width="16"
